@@ -12,7 +12,7 @@ export default async function Admin() {
         return (
           <div
             key={user.id}
-            className={`flex items-center justify-between gap-4 p-4 ${
+            className={`lg:flex items-center justify-between gap-4 p-4  ${
               users.indexOf(user) % 2 === 0
                 ? "bg-neutral-50 dark:bg-neutral-800"
                 : "bg-white dark:bg-neutral-900"

@@ -26,12 +26,12 @@ export const Counter = () => {
   return (
     <div className="flex flex-col items-center justify-center gap-4 ml-auto mr-auto">
       <div className="flex items-center justify-between gap-4">
-        <p className="text-lg text-black">Count: {count}</p>
+        <p className="text-lg dark:text-neutral-200">Count: {count}</p>
         <Button onClick={() => setCount(count + 1)}>Increment</Button>
         <Button onClick={() => setCount(0)}>Reset</Button>
       </div>
       <div>
-        <p className="text-lg text-black">If you see this, it means you are an admin</p>
+        <p className="text-lg dark:text-neutral-200">If you see this, it means you are an admin</p>
       </div>
     </div>
   );
