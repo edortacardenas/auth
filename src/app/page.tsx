@@ -14,7 +14,7 @@ export default async function Home() {
       
         <div className="flex justify-center p-5 content-center">
         
-      <Card className="rounded-r-2xl">
+      <Card >
         <CardHeader>
           <CardTitle className="text-xl">Hey, welcome back</CardTitle>
         </CardHeader>

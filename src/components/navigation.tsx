@@ -33,7 +33,8 @@ export const Navigation = () => {
                 </button>
               </SignUpButton>
             </SignedOut>
-            <SignedIn>
+            <SignedIn >
+              <Link href="/dashboard">Dashboard</Link>
               <Link href="/user-profile">Profile</Link>
               <SignOutButton />
               {/* <UserButton /> */}

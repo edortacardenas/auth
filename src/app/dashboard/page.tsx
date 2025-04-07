@@ -21,8 +21,8 @@ export default async function DashboardPage() {
     <Counter />
     
     <div className="flex justify-center p-5 content-center">
-    <Image className="rounded-l-2xl"height={150} width={150} src={sessionClaims && userObj?.imageUrl ? userObj.imageUrl : "/default-image.jpg"} alt="imagen" />
-      <Card className="rounded-r-2xl">
+    <Image className="rounded-l-2xl" height={150} width={150} src={sessionClaims && userObj?.imageUrl ? userObj.imageUrl : "@/public/img1.png"} alt="imagen" />
+      <Card className="rounded-l-none">
         <CardHeader>
           <CardTitle className="text-xl">Hey, welcome back {userObj?.fullName} </CardTitle>
         </CardHeader>
