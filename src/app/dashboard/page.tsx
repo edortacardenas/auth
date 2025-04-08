@@ -17,11 +17,13 @@ export default async function DashboardPage() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-       <Counter />
+       {isAdmin && <Counter />}
+       
        <div className="flex flex-col justify-center items-center p-5 content-center ">
         <Image className="rounded-t-2xl" 
         width={120} // Proporciona un ancho predeterminado
-        height={120}  
+        height={120}
+        style={{width:"auto", height:"auto"}}  
         src={sessionClaims && userObj?.imageUrl ? userObj.imageUrl : "@/public/img1.png"} 
         alt="imagen" 
         priority // Agrega esta propiedad
@@ -29,7 +31,7 @@ export default async function DashboardPage() {
 
         <Card >
             <CardHeader>
-              <CardTitle className="text-xl">Hey, welcome back {userObj?.fullName} </CardTitle>
+              <CardTitle className="text-xl">Hey, {userObj?.fullName} </CardTitle>
             </CardHeader>
             <CardContent>
             <TypographyP className="text-lg text-gray-600 ">
