@@ -1,5 +1,4 @@
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { TypographyP } from "@/components/ui/typography";
+
 import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 import { auth } from "@clerk/nextjs/server";
