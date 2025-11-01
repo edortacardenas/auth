@@ -29,8 +29,8 @@ export const Navbar = () => {
       <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo y Nombre del Sitio */}
         <Link href="/" className="flex items-center gap-2">
-          <Hotel className="h-6 w-6 text-primary" />
-          <span className="text-xl font-bold hidden sm:inline-block">
+          <Hotel className="h-6 w-6 text-indigo-400" />
+          <span className="bg-clip-text text-transparent text-xl bg-gradient-to-r from-indigo-400 to-purple-600 hidden font-bold sm:inline-block">
             Clerk
           </span>
         </Link>

@@ -3,6 +3,7 @@ import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 import { auth } from "@clerk/nextjs/server";
 import { SmokeCanvas } from "@/components/smoke-canvas"; // Asegúrate de que la ruta sea correcta
+import Image from "next/image";
 
 export default async function Home() {
   const { sessionClaims } = await auth();
@@ -47,8 +48,8 @@ export default async function Home() {
               </div>
               
               {/* Card visualization */}
-              <div className="md:w-1/2 relative p-1">
-                <img src="/img1.png" alt="imagen" className="rounded-full p-2 mt-12"/>
+              <div className="flex justify-around md:w-1/2 relative p-1">
+                <Image src="/img1.png" alt="imagen" width={600} height={600} className="rounded-full p-2 mt-12"/>
               </div>
             </div>
             
